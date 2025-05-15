@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // This function loads the GraphQL schema from a string
+// release Year fiha mochkla ki naamel Int!
 const loadSchema = async () => {
   return `
     type User {
@@ -23,7 +24,7 @@ const loadSchema = async () => {
       id: ID!
       title: String!
       genre: String!
-      releaseYear: Int!
+      releaseYear: Int   
       rating: Float
     }
 
